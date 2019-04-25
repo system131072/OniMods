@@ -58,7 +58,8 @@ namespace NetworkManager
             if (channels.ContainsKey(ch))
                 channels[ch].Unsubscribe(this, st);
         }
-
+        
+        // 이거 안 쓰는것 같아요
         public virtual void SetSignalEmit(IChannelNetworkComponent st)
         {
             if (st.GetEventHandler == null)
